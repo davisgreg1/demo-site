@@ -1,0 +1,22 @@
+/* styles/tokens.css — GENERATED, do not edit */
+:root {
+  --color-primary: #0A4D8C;
+  --color-primary-foreground: #FFFFFF;
+  --color-accent: #FF6B35;
+  --color-accent-foreground: #FFFFFF;
+  --color-background: #F8FAFC;
+  --color-foreground: #111827;
+  --color-muted: #F1F5F9;
+  --color-muted-foreground: #475569;
+  --color-border: #CBD5E1;
+  --color-success: #0F766E;
+  --color-warning: #B45309;
+  --color-danger: #B91C1C;
+  --font-heading: Bebas Neue, sans-serif;
+  --font-body: Inter, sans-serif;
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 1rem;
+  --spacing-scale: comfortable;
+  --shadow-scale: hard;
+}

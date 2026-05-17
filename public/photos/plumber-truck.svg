@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 480" role="img" aria-label="Plumbing service truck">
+  <rect width="720" height="480" fill="#f8fafc" />
+  <rect x="90" y="220" width="520" height="160" rx="32" fill="#0A4D8C" />
+  <rect x="120" y="120" width="340" height="120" rx="32" fill="#172554" />
+  <circle cx="220" cy="410" r="40" fill="#111827" />
+  <circle cx="500" cy="410" r="40" fill="#111827" />
+  <circle cx="220" cy="410" r="24" fill="#CBD5E1" />
+  <circle cx="500" cy="410" r="24" fill="#CBD5E1" />
+  <path d="M160 180h240v60H160z" fill="#FF6B35" />
+  <text x="200" y="260" fill="#fff" font-family="Inter, sans-serif" font-size="40" font-weight="700">Pioneer</text>
+</svg>
