@@ -15,11 +15,11 @@ export function HeroMinimal({ content }: HeroMinimalProps) {
           </h1>
           <p className="mt-4 text-base leading-7 text-muted-foreground">{content.subhead}</p>
           <div className="mt-8 flex flex-wrap gap-3">
-            <a href={content.primaryCta.href} className="rounded-full bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground transition hover:bg-slate-900">
+            <a href={content.primaryCta.href} className="rounded-full bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground transition hover:bg-primary-700">
               {content.primaryCta.label}
             </a>
             {content.secondaryCta ? (
-              <a href={content.secondaryCta.href} className="rounded-full border border-border px-5 py-3 text-sm font-semibold text-foreground transition hover:bg-muted">
+              <a href={content.secondaryCta.href} className="rounded-full border border-border px-5 py-3 text-sm font-semibold text-foreground transition hover:bg-slate-100">
                 {content.secondaryCta.label}
               </a>
             ) : null}

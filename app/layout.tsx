@@ -24,10 +24,28 @@ export const metadata: Metadata = {
   },
 };
 
+const themeScript = `
+(function() {
+  try {
+    var theme = localStorage.getItem('theme');
+    if (!theme) {
+      theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    }
+    var root = document.documentElement;
+    root.dataset.theme = theme;
+    root.classList.toggle('dark', theme === 'dark');
+    root.style.colorScheme = theme;
+  } catch (e) {
+    console.error(e);
+  }
+})();
+`;
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${headingFont.variable} ${bodyFont.variable} h-full`}>
       <body className="min-h-screen bg-background text-foreground antialiased">
+        <script dangerouslySetInnerHTML={{ __html: themeScript }} />
         <ThemeProvider>
           <Header variant={variants.header} content={headerContent} />
           <main className="min-h-screen">{children}</main>
