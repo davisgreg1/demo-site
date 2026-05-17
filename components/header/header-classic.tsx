@@ -1,3 +1,4 @@
+import { ThemeToggle } from "@/components/primitives/theme-toggle";
 import type { HeaderContent } from "./types";
 import { NavDesktop } from "./nav-desktop";
 import { NavMobile } from "./nav-mobile";
@@ -16,8 +17,14 @@ export function HeaderClassic({ content }: HeaderClassicProps) {
           </a>
           <p className="text-sm text-muted-foreground">Trusted plumbing across Atlanta</p>
         </div>
-        <NavDesktop items={content.navItems} phone={content.phone} ctaHref={content.cta.href} />
-        <NavMobile items={content.navItems} phone={content.phone} ctaHref={content.cta.href} />
+        <div className="hidden items-center gap-6 lg:flex">
+          <NavDesktop items={content.navItems} phone={content.phone} ctaHref={content.cta.href} />
+          <ThemeToggle />
+        </div>
+        <div className="flex items-center gap-2 lg:hidden">
+          <NavMobile items={content.navItems} phone={content.phone} ctaHref={content.cta.href} />
+          <ThemeToggle />
+        </div>
       </div>
     </header>
   );

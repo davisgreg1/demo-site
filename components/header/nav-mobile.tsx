@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
-import { ThemeToggle } from "@/components/primitives/theme-toggle";
 import type { NavItem } from "./types";
 
 interface NavMobileProps {
@@ -28,7 +27,7 @@ export function NavMobile({ items, phone, ctaHref }: NavMobileProps) {
         <div className="absolute inset-x-4 top-20 z-40 rounded-3xl bg-white p-6 shadow-hard">
           <nav className="flex flex-col gap-4">
             {items.map((item) => (
-              <a key={item.href} href={item.href} className="text-base font-medium text-foreground">
+              <a key={item.href} href={item.href} className="nav-link text-base font-medium text-foreground">
                 {item.label}
               </a>
             ))}
@@ -41,9 +40,6 @@ export function NavMobile({ items, phone, ctaHref }: NavMobileProps) {
             >
               Book Service
             </a>
-            <div className="mt-4 border-t border-border pt-4">
-              <ThemeToggle />
-            </div>
           </nav>
         </div>
       ) : null}

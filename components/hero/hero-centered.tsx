@@ -21,11 +21,11 @@ export function HeroCentered({ content }: HeroCenteredProps) {
           <p className="mt-5 text-lg leading-8 text-muted-foreground">{content.subhead}</p>
         </motion.div>
         <div className="grid gap-4 sm:grid-cols-[1fr_1fr]">
-          <a href={content.primaryCta.href} className="rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition hover:bg-slate-900">
+          <a href={content.primaryCta.href} className="rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition hover:bg-primary-700">
             {content.primaryCta.label}
           </a>
           {content.secondaryCta ? (
-            <a href={content.secondaryCta.href} className="rounded-full border border-border bg-white px-6 py-3 text-sm font-semibold text-foreground transition hover:bg-muted">
+            <a href={content.secondaryCta.href} className="rounded-full border border-border bg-white px-6 py-3 text-sm font-semibold text-foreground transition hover:bg-slate-100">
               {content.secondaryCta.label}
             </a>
           ) : null}

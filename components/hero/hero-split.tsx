@@ -24,11 +24,11 @@ export function HeroSplit({ content }: HeroSplitProps) {
             {content.subhead}
           </p>
           <div className="mt-10 flex flex-col gap-4 sm:flex-row">
-            <a href={content.primaryCta.href} className="inline-flex items-center justify-center rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition hover:bg-slate-900">
+            <a href={content.primaryCta.href} className="inline-flex items-center justify-center rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition hover:bg-primary-700">
               {content.primaryCta.label}
             </a>
             {content.secondaryCta ? (
-              <a href={content.secondaryCta.href} className="inline-flex items-center justify-center rounded-full border border-border bg-white px-6 py-3 text-sm font-semibold text-foreground transition hover:bg-muted">
+              <a href={content.secondaryCta.href} className="inline-flex items-center justify-center rounded-full border border-border bg-white px-6 py-3 text-sm font-semibold text-foreground transition hover:bg-slate-100">
                 {content.secondaryCta.label}
               </a>
             ) : null}

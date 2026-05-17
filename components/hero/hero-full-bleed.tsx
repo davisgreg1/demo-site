@@ -25,7 +25,7 @@ export function HeroFullBleed({ content }: HeroFullBleedProps) {
               {content.subhead}
             </p>
             <div className="mt-10 flex flex-col gap-4 sm:flex-row">
-              <a href={content.primaryCta.href} className="inline-flex items-center justify-center rounded-full bg-white px-6 py-3 text-sm font-semibold text-foreground transition hover:bg-slate-100">
+              <a href={content.primaryCta.href} className="inline-flex items-center justify-center rounded-full bg-white px-6 py-3 text-sm font-semibold text-foreground transition hover:bg-slate-200">
                 {content.primaryCta.label}
               </a>
               {content.secondaryCta ? (

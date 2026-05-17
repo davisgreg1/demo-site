@@ -13,13 +13,13 @@ export function HeaderMinimal({ content }: HeaderMinimalProps) {
           {content.businessName}
         </a>
         <div className="flex items-center gap-4 text-sm text-muted-foreground">
-          <ThemeToggle />
           <a href={`tel:${content.phone}`} className="font-semibold text-foreground">
             {content.phone}
           </a>
           <a href={content.cta.href} className="rounded-full bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground">
             {content.cta.label}
           </a>
+          <ThemeToggle />
         </div>
       </div>
     </header>
